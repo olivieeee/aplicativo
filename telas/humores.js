@@ -5,15 +5,21 @@ render (){
     return(
         <View style={styles.container}>
             <Text style={styles.title}>O que você está sentindo hoje?</Text>
-            <TouchableOpacity style={styles.botao}>
+            <TouchableOpacity style={styles.botao} onPress={()=>{
+                this.props.navigation.navigate("Tristeza")
+            }}>
                 <Image source={require("../assets/tristeza.png")} style={styles.image}/>
                 <Text>Tristeza</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.botao}>
+            <TouchableOpacity style={styles.botao} onPress={()=>{
+                this.props.navigation.navigate("Ansiedade")
+            }}>
                 <Image source={require("../assets/ansiedade.png")} style={styles.image}/>
                 <Text>Ansiedade</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.botao}>
+            <TouchableOpacity style={styles.botao} onPress={()=>{
+                this.props.navigation.navigate("Estresse")
+            }}>
                 <Image source={require("../assets/estresse.png")} style={styles.image}/>
                 <Text>Estresse</Text>
             </TouchableOpacity>
