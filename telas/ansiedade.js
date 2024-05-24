@@ -6,7 +6,9 @@ render (){
         <View style={styles.container}>
             <Text style={styles.title}>Tudo bem pensar nos seus afazeres durante o dia, mas se isso afetar outras partes da sua vida como o seu sono, 
             procure psicológo.</Text>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={()=>{
+                this.props.navigation.navigate("Jogodaansiedade")
+            }}>
     <Image source={require("../assets/botao.png")} style={styles.image}>
 
     </Image>

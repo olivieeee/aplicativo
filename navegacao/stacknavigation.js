@@ -5,6 +5,8 @@ import Tristeza from "../telas/tristeza"
 import Ansiedade from "../telas/ansiedade"
 import Estresse from "../telas/estresse"
 import Jogodoestresse from "../telas/jogodoestresse"
+import Jogodatristeza from "../telas/jogodatristeza"
+import Jogodaansiedade from '../telas/jogodaansiedade'
 
 
 import { createStackNavigator } from '@react-navigation/stack';
@@ -20,6 +22,8 @@ function MyStack() {
       <Stack.Screen name="Ansiedade" component={Ansiedade}/>
       <Stack.Screen name="Estresse" component={Estresse}/>
       <Stack.Screen name="Jogodoestresse" component={Jogodoestresse}/>
+      <Stack.Screen name="Jogodatristeza" component={Jogodatristeza}/>
+      <Stack.Screen name="Jogodaansiedade" component={Jogodaansiedade}/>
     </Stack.Navigator>
   );
 }

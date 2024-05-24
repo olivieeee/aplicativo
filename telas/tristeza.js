@@ -6,7 +6,9 @@ render (){
         <View style={styles.container}>
             <Text style={styles.title}>Não deixe esse sentimento 
 negativo te abalar, caso os sintomas sejam muito persistentes, procure um psicólogo.</Text>
-<TouchableOpacity>
+<TouchableOpacity onPress={()=>{
+                this.props.navigation.navigate("Jogodatristeza")
+            }}>
     <Image source={require("../assets/botao.png")} style={styles.image}>
 
     </Image>
