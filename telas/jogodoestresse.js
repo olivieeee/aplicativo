@@ -7,7 +7,7 @@ render (){
     return (
         <WebView
           style={styles.container}
-          source={{ uri: "https://www.friv.com/z/games/chargeit/game.html" }}
+          source={{ uri: "https://www.friv.com/z/games/superonionboy/game.html" }}
         />
       );
     }

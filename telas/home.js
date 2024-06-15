@@ -1,6 +1,10 @@
 import React, {Component} from "react";
 import {View, Text, Image, StyleSheet} from "react-native";
 import * as Font from "expo-font";
+import * as SplashScreen from 'expo-splash-screen';
+SplashScreen.preventAutoHideAsync();
+
+
 
 let customFonts = {
     "conforta": require("../assets/fonte/Comfortaa-VariableFont_wght.ttf"),
@@ -25,12 +29,17 @@ export default class Home extends Component {
             this.props.navigation.navigate("Humores")
         },3000)
     }
+    
+    
 render (){
+    if (this.state.fontsLoaded) {SplashScreen.hideAsync()
     return(
         <View style={styles.container}>
+            
             <Text style={styles.title}>Humor</Text>
         </View>
     )
+}
 }
 }
 const styles=StyleSheet.create({
